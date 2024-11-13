@@ -1,6 +1,12 @@
 오픈 날씨 API를 활용한 리액트 대시보드 만들기 강의 (스스로 해보기)
 
--`npm install`
+`npm install`
+
+`npm install -D tailwindcss postcss autoprefixer`
+
+`npx tailwindcss init -p`
+
+참고문서: https://ui.shadcn.com/docs/installation/vite
 
 -리액트 라우터 설치: `npm install react-router-dom`
 
