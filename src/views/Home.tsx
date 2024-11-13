@@ -74,7 +74,7 @@ function HomePage() {
                                 오늘의 시간대별 날씨를 조회하고 있습니다.
                             </CardDescription>
                         </CardHeader>
-                        <CardContent className="flex flex-nowrap gap-4 overflow-x-scroll">
+                        <CardContent className="flex flex-nowrap gap-4 overflow-x-scroll scrollbar-hide">
                             <Card className="flex min-w-fit pt-2 pb-2 pr-4 pl-4 flex-col justify-center">
                                 <span>오전 0시</span>
                                 <img
@@ -84,63 +84,15 @@ function HomePage() {
                                 />
                                 <div className="flex justify-items-start justify-center">
                                     <span className="text-xl font-extrabold">
-                                        11
+                                        13
                                     </span>
                                     <span className="text-sm mt-[5%] font-bold">
                                         ℃
                                     </span>
                                 </div>
-                            </Card>{" "}
+                            </Card>
                             <Card className="flex min-w-fit pt-2 pb-2 pr-4 pl-4 flex-col justify-center">
-                                <span>오전 0시</span>
-                                <img
-                                    src="src/assets/icons/1000n.svg"
-                                    alt="weather-icon"
-                                    className="h-16 w-16"
-                                />
-                                <div className="flex justify-items-start justify-center">
-                                    <span className="text-xl font-extrabold">
-                                        11
-                                    </span>
-                                    <span className="text-sm mt-[5%] font-bold">
-                                        ℃
-                                    </span>
-                                </div>
-                            </Card>{" "}
-                            <Card className="flex min-w-fit pt-2 pb-2 pr-4 pl-4 flex-col justify-center">
-                                <span>오전 0시</span>
-                                <img
-                                    src="src/assets/icons/1000n.svg"
-                                    alt="weather-icon"
-                                    className="h-16 w-16"
-                                />
-                                <div className="flex justify-items-start justify-center">
-                                    <span className="text-xl font-extrabold">
-                                        11
-                                    </span>
-                                    <span className="text-sm mt-[5%] font-bold">
-                                        ℃
-                                    </span>
-                                </div>
-                            </Card>{" "}
-                            <Card className="flex min-w-fit pt-2 pb-2 pr-4 pl-4 flex-col justify-center">
-                                <span>오전 0시</span>
-                                <img
-                                    src="src/assets/icons/1000n.svg"
-                                    alt="weather-icon"
-                                    className="h-16 w-16"
-                                />
-                                <div className="flex justify-items-start justify-center">
-                                    <span className="text-xl font-extrabold">
-                                        11
-                                    </span>
-                                    <span className="text-sm mt-[5%] font-bold">
-                                        ℃
-                                    </span>
-                                </div>
-                            </Card>{" "}
-                            <Card className="flex min-w-fit pt-2 pb-2 pr-4 pl-4 flex-col justify-center">
-                                <span>오전 0시</span>
+                                <span>오전 1시</span>
                                 <img
                                     src="src/assets/icons/1000n.svg"
                                     alt="weather-icon"
@@ -156,9 +108,73 @@ function HomePage() {
                                 </div>
                             </Card>
                             <Card className="flex min-w-fit pt-2 pb-2 pr-4 pl-4 flex-col justify-center">
-                                <span>오전 0시</span>
+                                <span>오전 2시</span>
                                 <img
                                     src="src/assets/icons/1000n.svg"
+                                    alt="weather-icon"
+                                    className="h-16 w-16"
+                                />
+                                <div className="flex justify-items-start justify-center">
+                                    <span className="text-xl font-extrabold">
+                                        12
+                                    </span>
+                                    <span className="text-sm mt-[5%] font-bold">
+                                        ℃
+                                    </span>
+                                </div>
+                            </Card>
+                            <Card className="flex min-w-fit pt-2 pb-2 pr-4 pl-4 flex-col justify-center">
+                                <span>오전 3시</span>
+                                <img
+                                    src="src/assets/icons/1000n.svg"
+                                    alt="weather-icon"
+                                    className="h-16 w-16"
+                                />
+                                <div className="flex justify-items-start justify-center">
+                                    <span className="text-xl font-extrabold">
+                                        12
+                                    </span>
+                                    <span className="text-sm mt-[5%] font-bold">
+                                        ℃
+                                    </span>
+                                </div>
+                            </Card>
+                            <Card className="flex min-w-fit pt-2 pb-2 pr-4 pl-4 flex-col justify-center">
+                                <span>오전 4시</span>
+                                <img
+                                    src="src/assets/icons/1003n.svg"
+                                    alt="weather-icon"
+                                    className="h-16 w-16"
+                                />
+                                <div className="flex justify-items-start justify-center">
+                                    <span className="text-xl font-extrabold">
+                                        12
+                                    </span>
+                                    <span className="text-sm mt-[5%] font-bold">
+                                        ℃
+                                    </span>
+                                </div>
+                            </Card>
+                            <Card className="flex min-w-fit pt-2 pb-2 pr-4 pl-4 flex-col justify-center">
+                                <span>오전 5시</span>
+                                <img
+                                    src="src/assets/icons/1003n.svg"
+                                    alt="weather-icon"
+                                    className="h-16 w-16"
+                                />
+                                <div className="flex justify-items-start justify-center">
+                                    <span className="text-xl font-extrabold">
+                                        11
+                                    </span>
+                                    <span className="text-sm mt-[5%] font-bold">
+                                        ℃
+                                    </span>
+                                </div>
+                            </Card>
+                            <Card className="flex min-w-fit pt-2 pb-2 pr-4 pl-4 flex-col justify-center">
+                                <span>오전 6시</span>
+                                <img
+                                    src="src/assets/icons/1003n.svg"
                                     alt="weather-icon"
                                     className="h-16 w-16"
                                 />
