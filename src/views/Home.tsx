@@ -8,8 +8,11 @@ import {
 
 import { Input } from "@/components/ui/input";
 import { Separator } from "@radix-ui/react-separator";
+import { Map } from "react-kakao-maps-sdk"
+import useKakaoLoader from "@/hooks/useKakaoLoader"
 
 function HomePage() {
+    useKakaoLoader()
     return (
         <div className="page max-w-[1440px] h-screen flex align-center justify-center">
             <div className="page__container h-full  bg-slate-400">
@@ -189,7 +192,24 @@ function HomePage() {
                     </Card>
 
                     {/* 지도 */}
-                    <Card className=""></Card>
+                    <Card className="">
+                        <Map
+                            id="map"
+                            center={{
+                                /** 지도의 중심좌표 */
+                                lat: 37.5683,
+                                lng: 126.9778,
+                            }}
+                            style={{
+                                /** 지도의 크기 */
+                                width: "100%",
+                                height: "100%",
+                                borderRadius: "8px",
+                            }}
+                            /** 지도의 확대 레벨 */
+                            level={13}
+                        />
+                    </Card>
 
                     {/* 하이라이트 */}
                     <Card className="col-span-3">
