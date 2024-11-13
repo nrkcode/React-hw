@@ -12,7 +12,7 @@ import { Separator } from "@radix-ui/react-separator";
 function HomePage() {
     return (
         <div className="page max-w-[1440px] h-screen flex align-center justify-center">
-            <div className="page__container h-full bg-gray-500">
+            <div className="page__container h-full  bg-slate-400">
                 <header className="grid grid-cols-2 text-6xl font-extrabold text-white bg-slate-400">
                     <div className="container flex items-center flex-nowrap">
                         <img
@@ -25,7 +25,7 @@ function HomePage() {
                         <div className="flex w-full items-center p-4">
                             <Input
                                 type="search"
-                                placeholder="검색할 지역 이름을 입력하세요."
+                                placeholder="검색할 지역 이름을 영어로 입력하세요."
                             />
                         </div>
                     </div>
@@ -57,12 +57,12 @@ function HomePage() {
                                 </div>
                             </div>
                             <Separator className="my-4" />
-                            <span className="text-sm font-medium">
+                            <p className="text-sm font-medium">
                                 2024-11-13
-                            </span>
-                            <span className="text-sm font-medium">
+                            </p>
+                            <p className="text-sm font-medium">
                                 Seoul SouthKorea
-                            </span>
+                            </p>
                         </CardContent>
                     </Card>
 
