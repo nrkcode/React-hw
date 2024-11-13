@@ -1,4 +1,5 @@
-오픈 날씨 API를 활용한 리액트 대시보드 만들기
+오픈 날씨 API를 활용한 리액트 대시보드 만들기 강의 (스스로 해보기)
+
 -리액트 라우터 설치: `npm install react-router-dom`
 -SASS/SCSS 라이브러리 설치: `npm install -D sass-embedded`
 -리액트 카카오맵 API SDK 설치: `npm install react-kakao-maps-sdk`
