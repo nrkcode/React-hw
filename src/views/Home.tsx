@@ -343,13 +343,216 @@ function HomePage() {
                         </CardContent>
                     </Card>
 
+                    {/* 일주일 */}
                     <Card className="">
                         <CardHeader>
-                            <CardTitle>Card Title</CardTitle>
-                            <CardDescription>Card Description</CardDescription>
+                            <CardTitle>7 Days</CardTitle>
+                            <CardDescription>이번주 날씨를 조회하고 있습니다.</CardDescription>
                         </CardHeader>
-                        <CardContent>
-                            <p>Card Content</p>
+                        <CardContent className="flex flex-col gap-1">
+                            <div className="flex justify-between bg-neutral-100 p-1 rounded">
+                                <div className="flex flex-row gap-2  pl-1">
+                                    <img
+                                        src="src/assets/icons/1003d.svg"
+                                        alt="weather-icon"
+                                        className="h-8 w-8"
+                                    />
+                                    <div className="flex justify-items-start justify-center">
+                                        <span className="text-xl font-bold text-red-800">
+                                            18
+                                        </span>
+                                        <span className="text-sm mt-[3%]">
+                                            ℃
+                                        </span>
+                                    </div>
+                                    <div className="flex justify-items-start justify-center">
+                                        <span className="text-xl font-bold text-blue-800">
+                                            11
+                                        </span>
+                                        <span className="text-sm mt-[3%]">
+                                            ℃
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="flex gap-4 align-middle pr-1">
+                                    <span className="text-sm font-medium text-center">13 Nov</span>
+                                    <span className="text-sm font-medium text-center">수요일</span>
+                                </div>
+                            </div>
+                            <div className="flex justify-between bg-neutral-100 p-1 rounded">
+                                <div className="flex flex-row gap-2  pl-1">
+                                    <img
+                                        src="src/assets/icons/1003d.svg"
+                                        alt="weather-icon"
+                                        className="h-8 w-8"
+                                    />
+                                    <div className="flex justify-items-start justify-center">
+                                        <span className="text-xl font-bold text-red-800">
+                                            17
+                                        </span>
+                                        <span className="text-sm mt-[3%]">
+                                            ℃
+                                        </span>
+                                    </div>
+                                    <div className="flex justify-items-start justify-center">
+                                        <span className="text-xl font-bold text-blue-800">
+                                            12
+                                        </span>
+                                        <span className="text-sm mt-[3%]">
+                                            ℃
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="flex gap-4 align-middle pr-1">
+                                    <span className="text-sm font-medium text-center">14 Nov</span>
+                                    <span className="text-sm font-medium text-center">목요일</span>
+                                </div>
+                            </div>
+                            <div className="flex justify-between bg-neutral-100 p-1 rounded">
+                                <div className="flex flex-row gap-2  pl-1">
+                                    <img
+                                        src="src/assets/icons/1003d.svg"
+                                        alt="weather-icon"
+                                        className="h-8 w-8"
+                                    />
+                                    <div className="flex justify-items-start justify-center">
+                                        <span className="text-xl font-bold text-red-800">
+                                            18
+                                        </span>
+                                        <span className="text-sm mt-[3%]">
+                                            ℃
+                                        </span>
+                                    </div>
+                                    <div className="flex justify-items-start justify-center">
+                                        <span className="text-xl font-bold text-blue-800">
+                                            15
+                                        </span>
+                                        <span className="text-sm mt-[3%]">
+                                            ℃
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="flex gap-4 align-middle pr-1">
+                                    <span className="text-sm font-medium text-center">15 Nov</span>
+                                    <span className="text-sm font-medium text-center">금요일</span>
+                                </div>
+                            </div>
+                            <div className="flex justify-between bg-neutral-100 p-1 rounded">
+                                <div className="flex flex-row gap-2  pl-1">
+                                    <img
+                                        src="src/assets/icons/1006d.svg"
+                                        alt="weather-icon"
+                                        className="h-8 w-8"
+                                    />
+                                    <div className="flex justify-items-start justify-center">
+                                        <span className="text-xl font-bold text-red-800">
+                                            17
+                                        </span>
+                                        <span className="text-sm mt-[3%]">
+                                            ℃
+                                        </span>
+                                    </div>
+                                    <div className="flex justify-items-start justify-center">
+                                        <span className="text-xl font-bold text-blue-800">
+                                            15
+                                        </span>
+                                        <span className="text-sm mt-[3%]">
+                                            ℃
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="flex gap-4 align-middle pr-1">
+                                    <span className="text-sm font-medium text-center">16 Nov</span>
+                                    <span className="text-sm font-medium text-center">토요일</span>
+                                </div>
+                            </div>
+                            <div className="flex justify-between bg-neutral-100 p-1 rounded">
+                                <div className="flex flex-row gap-2  pl-1">
+                                    <img
+                                        src="src/assets/icons/1063d.svg"
+                                        alt="weather-icon"
+                                        className="h-8 w-8"
+                                    />
+                                    <div className="flex justify-items-start justify-center">
+                                        <span className="text-xl font-bold text-red-800">
+                                            13
+                                        </span>
+                                        <span className="text-sm mt-[3%]">
+                                            ℃
+                                        </span>
+                                    </div>
+                                    <div className="flex justify-items-start justify-center">
+                                        <span className="text-xl font-bold text-blue-800">
+                                            6
+                                        </span>
+                                        <span className="text-sm mt-[3%]">
+                                            ℃
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="flex gap-4 align-middle pr-1">
+                                    <span className="text-sm font-medium text-center">17 Nov</span>
+                                    <span className="text-sm font-medium text-center">일요일</span>
+                                </div>
+                            </div>
+                            <div className="flex justify-between bg-neutral-100 p-1 rounded">
+                                <div className="flex flex-row gap-2  pl-1">
+                                    <img
+                                        src="src/assets/icons/1000d.svg"
+                                        alt="weather-icon"
+                                        className="h-8 w-8"
+                                    />
+                                    <div className="flex justify-items-start justify-center">
+                                        <span className="text-xl font-bold text-red-800">
+                                            7
+                                        </span>
+                                        <span className="text-sm mt-[3%]">
+                                            ℃
+                                        </span>
+                                    </div>
+                                    <div className="flex justify-items-start justify-center">
+                                        <span className="text-xl font-bold text-blue-800">
+                                            1
+                                        </span>
+                                        <span className="text-sm mt-[3%]">
+                                            ℃
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="flex gap-4 align-middle pr-1">
+                                    <span className="text-sm font-medium text-center">18 Nov</span>
+                                    <span className="text-sm font-medium text-center">월요일</span>
+                                </div>
+                            </div>
+                            <div className="flex justify-between bg-neutral-100 p-1 rounded">
+                                <div className="flex flex-row gap-2  pl-1">
+                                    <img
+                                        src="src/assets/icons/1000d.svg"
+                                        alt="weather-icon"
+                                        className="h-8 w-8"
+                                    />
+                                    <div className="flex justify-items-start justify-center">
+                                        <span className="text-xl font-bold text-red-800">
+                                            11
+                                        </span>
+                                        <span className="text-sm mt-[3%]">
+                                            ℃
+                                        </span>
+                                    </div>
+                                    <div className="flex justify-items-start justify-center">
+                                        <span className="text-xl font-bold text-blue-800">
+                                            4
+                                        </span>
+                                        <span className="text-sm mt-[3%]">
+                                            ℃
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="flex gap-4 align-middle pr-1">
+                                    <span className="text-sm font-medium text-center">19 Nov</span>
+                                    <span className="text-sm font-medium text-center">화요일</span>
+                                </div>
+                            </div>
                         </CardContent>
                     </Card>
                 </div>
