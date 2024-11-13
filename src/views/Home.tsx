@@ -57,9 +57,7 @@ function HomePage() {
                                 </div>
                             </div>
                             <Separator className="my-4" />
-                            <p className="text-sm font-medium">
-                                2024-11-13
-                            </p>
+                            <p className="text-sm font-medium">2024-11-13</p>
                             <p className="text-sm font-medium">
                                 Seoul SouthKorea
                             </p>
@@ -190,15 +188,158 @@ function HomePage() {
                         </CardContent>
                     </Card>
 
+                    {/* 지도 */}
                     <Card className=""></Card>
 
+                    {/* 하이라이트 */}
                     <Card className="col-span-3">
                         <CardHeader>
-                            <CardTitle>Card Title</CardTitle>
-                            <CardDescription>Card Description</CardDescription>
+                            <CardTitle>Today's Highlights</CardTitle>
+                            <CardDescription>
+                                오늘 날씨 중 주의깊게 살펴보아야 할 이벤트를
+                                조회하고 있습니다.
+                            </CardDescription>
                         </CardHeader>
-                        <CardContent>
-                            <p>Card Content</p>
+                        <CardContent className="grid grid-cols-4 gap-4">
+                            <Card className="col-span-2 bg-neutral-100">
+                                <CardHeader>
+                                    <CardDescription className="font-semibold">
+                                        해양 및 조수 데이터
+                                        <span className="text-sm ml-1 font-normal text-neutral-400">
+                                            Marine and Sailing
+                                        </span>
+                                    </CardDescription>
+                                </CardHeader>
+                                <CardContent className="flex flex-row w-fit gap-4">
+                                    <img
+                                        src="src\assets\icons\Waves.png"
+                                        className="h-16 w-16"
+                                    />
+                                    <div className="flex min-w-fit flex-col justify-center">
+                                        <span className="text-sm">
+                                            1회 - 만조
+                                        </span>
+                                        <span className="text-lg font-extrabold">
+                                            02:31am
+                                        </span>
+                                    </div>
+                                    <div className="flex min-w-fit flex-col justify-center">
+                                        <span className="text-sm">
+                                            2회 - 간조
+                                        </span>
+                                        <span className="text-lg font-extrabold">
+                                            08:49am
+                                        </span>
+                                    </div>
+                                    <div className="flex min-w-fit flex-col justify-center">
+                                        <span className="text-sm">
+                                            3회 - 만조
+                                        </span>
+                                        <span className="text-lg font-extrabold">
+                                            15:08pm
+                                        </span>
+                                    </div>
+                                    <div className="flex min-w-fit flex-col justify-center">
+                                        <span className="text-sm">
+                                            4회 - 간조
+                                        </span>
+                                        <span className="text-lg font-extrabold">
+                                            21:11pm
+                                        </span>
+                                    </div>
+                                </CardContent>
+                            </Card>
+                            <Card className="col-span-2 bg-neutral-100">
+                                <CardHeader>
+                                    <CardDescription className="font-semibold">
+                                        일출/일몰
+                                        <span className="text-sm ml-1 font-normal text-neutral-400">
+                                            Sunrise & Sunset
+                                        </span>
+                                    </CardDescription>
+                                </CardHeader>
+                                <CardContent className="flex flex-row w-fit gap-4">
+                                    <div className="flex min-w-fit gap-1">
+                                        <img src="src\assets\icons\1000d.svg" className="h-16 w-16"/>
+                                        <div className="flex min-w-fit flex-col m-1 justify-start">
+                                            <span className="text-sm">Sunrise</span>
+                                            <span className="text-3xl font-extrabold">07:11 AM</span>
+                                        </div>
+                                    </div>
+                                    <div className="flex min-w-fit gap-1">
+                                        <img src="src\assets\icons\1000n.svg" className="h-16 w-16"/>
+                                        <div className="flex min-w-fit flex-col m-1 justify-start">
+                                            <span className="text-sm">Sunset</span>
+                                            <span className="text-3xl font-extrabold">05:25 PM</span>
+                                        </div>
+                                    </div>
+                                </CardContent>
+                            </Card>
+                            <Card className="bg-neutral-100">
+                                <CardHeader>
+                                    <CardDescription className="font-semibold">
+                                    습도
+                                    <span className="text-sm ml-1 font-normal text-neutral-400">
+                                    Humidity</span>
+                                    </CardDescription>
+                                </CardHeader>
+                                <CardContent className="flex min-w-fit justify-between">
+                                    <img src="src/assets/icons/Humidity.svg" className="h-10 w-10"/>
+                                    <div className="">
+                                        <span className="text-3xl font-extrabold">62</span>
+                                        <span className="text-lg">%</span>
+                                    </div>
+                                </CardContent>
+                            </Card>
+                            <Card className="bg-neutral-100">
+                                <CardHeader>
+                                    <CardDescription className="font-semibold">
+                                    기압
+                                    <span className="text-sm ml-1 font-normal text-neutral-400">
+                                    Pressure</span>
+                                    </CardDescription>
+                                </CardHeader>
+                                <CardContent className="flex min-w-fit justify-between">
+                                    <img src="src/assets/icons/Wind.svg" className="h-10 w-10"/>
+                                    <div className="">
+                                        <span className="text-3xl font-extrabold">1022</span>
+                                        <span className="text-lg">hPa</span>
+                                    </div>
+                                </CardContent>
+                            </Card>
+                            <Card className="bg-neutral-100">
+                                <CardHeader>
+                                    <CardDescription className="font-semibold">
+                                    가시거리
+                                    <span className="text-sm ml-1 font-normal text-neutral-400">
+                                    Visibility</span>
+                                    </CardDescription>
+                                </CardHeader>
+                                <CardContent className="flex min-w-fit justify-between">
+                                    <img src="src/assets/icons/Fog.svg" className="h-10 w-10"/>
+                                    <div className="">
+                                        <span className="text-3xl font-extrabold">10</span>
+                                        <span className="text-lg">km</span>
+                                    </div>
+                                </CardContent>
+                            </Card>
+                            <Card className="bg-neutral-100">
+                                <CardHeader>
+                                    <CardDescription className="font-semibold">
+                                    체감온도
+                                    <span className="text-sm ml-1 font-normal text-neutral-400">
+                                    Feels Like</span>
+                                    </CardDescription>
+                                </CardHeader>
+                                <CardContent className="flex min-w-fit justify-between">
+                                    <img src="src/assets/icons/Hot.svg" className="h-10 w-10"/>
+                                    <div className="flex justify-start">
+                                        <span className="text-3xl font-extrabold">12</span>
+                                        <span className="text-lg ">℃</span>
+                                        
+                                    </div>
+                                </CardContent>
+                            </Card>
                         </CardContent>
                     </Card>
 
