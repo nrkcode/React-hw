@@ -30,8 +30,10 @@ function HomePage() {
                         </div>
                     </div>
                 </header>
+
                 <div className="grid ml-5 mr-5 grid-cols-4 gap-5">
-                    <Card className="">
+                    {/* 투데이 */}
+                    <Card>
                         <CardHeader>
                             <CardTitle>Today</CardTitle>
                             <CardDescription>
@@ -46,27 +48,129 @@ function HomePage() {
                                     className="h-16 w-16"
                                 />
                                 <div className="flex justify-items-start">
-                                    <span className="text-6xl font-extrabold">11</span>
-                                    <span className="text-3xl mt-2 font-bold">℃</span>
+                                    <span className="text-6xl font-extrabold">
+                                        11
+                                    </span>
+                                    <span className="text-3xl mt-[5%] font-bold">
+                                        ℃
+                                    </span>
                                 </div>
                             </div>
                             <Separator className="my-4" />
-                            <h4 className="text-sm font-medium">
+                            <span className="text-sm font-medium">
                                 2024-11-13
-                            </h4>
-                            <h4 className="text-sm font-medium">
+                            </span>
+                            <span className="text-sm font-medium">
                                 Seoul SouthKorea
-                            </h4>
+                            </span>
                         </CardContent>
                     </Card>
 
+                    {/* 시간별 */}
                     <Card className="col-span-2">
                         <CardHeader>
-                            <CardTitle>Card Title</CardTitle>
-                            <CardDescription>Card Description</CardDescription>
+                            <CardTitle>Hourly</CardTitle>
+                            <CardDescription>
+                                오늘의 시간대별 날씨를 조회하고 있습니다.
+                            </CardDescription>
                         </CardHeader>
-                        <CardContent>
-                            <p>Card Content</p>
+                        <CardContent className="flex flex-nowrap gap-4 overflow-x-scroll">
+                            <Card className="flex min-w-fit pt-2 pb-2 pr-4 pl-4 flex-col justify-center">
+                                <span>오전 0시</span>
+                                <img
+                                    src="src/assets/icons/1000n.svg"
+                                    alt="weather-icon"
+                                    className="h-16 w-16"
+                                />
+                                <div className="flex justify-items-start justify-center">
+                                    <span className="text-xl font-extrabold">
+                                        11
+                                    </span>
+                                    <span className="text-sm mt-[5%] font-bold">
+                                        ℃
+                                    </span>
+                                </div>
+                            </Card>{" "}
+                            <Card className="flex min-w-fit pt-2 pb-2 pr-4 pl-4 flex-col justify-center">
+                                <span>오전 0시</span>
+                                <img
+                                    src="src/assets/icons/1000n.svg"
+                                    alt="weather-icon"
+                                    className="h-16 w-16"
+                                />
+                                <div className="flex justify-items-start justify-center">
+                                    <span className="text-xl font-extrabold">
+                                        11
+                                    </span>
+                                    <span className="text-sm mt-[5%] font-bold">
+                                        ℃
+                                    </span>
+                                </div>
+                            </Card>{" "}
+                            <Card className="flex min-w-fit pt-2 pb-2 pr-4 pl-4 flex-col justify-center">
+                                <span>오전 0시</span>
+                                <img
+                                    src="src/assets/icons/1000n.svg"
+                                    alt="weather-icon"
+                                    className="h-16 w-16"
+                                />
+                                <div className="flex justify-items-start justify-center">
+                                    <span className="text-xl font-extrabold">
+                                        11
+                                    </span>
+                                    <span className="text-sm mt-[5%] font-bold">
+                                        ℃
+                                    </span>
+                                </div>
+                            </Card>{" "}
+                            <Card className="flex min-w-fit pt-2 pb-2 pr-4 pl-4 flex-col justify-center">
+                                <span>오전 0시</span>
+                                <img
+                                    src="src/assets/icons/1000n.svg"
+                                    alt="weather-icon"
+                                    className="h-16 w-16"
+                                />
+                                <div className="flex justify-items-start justify-center">
+                                    <span className="text-xl font-extrabold">
+                                        11
+                                    </span>
+                                    <span className="text-sm mt-[5%] font-bold">
+                                        ℃
+                                    </span>
+                                </div>
+                            </Card>{" "}
+                            <Card className="flex min-w-fit pt-2 pb-2 pr-4 pl-4 flex-col justify-center">
+                                <span>오전 0시</span>
+                                <img
+                                    src="src/assets/icons/1000n.svg"
+                                    alt="weather-icon"
+                                    className="h-16 w-16"
+                                />
+                                <div className="flex justify-items-start justify-center">
+                                    <span className="text-xl font-extrabold">
+                                        11
+                                    </span>
+                                    <span className="text-sm mt-[5%] font-bold">
+                                        ℃
+                                    </span>
+                                </div>
+                            </Card>
+                            <Card className="flex min-w-fit pt-2 pb-2 pr-4 pl-4 flex-col justify-center">
+                                <span>오전 0시</span>
+                                <img
+                                    src="src/assets/icons/1000n.svg"
+                                    alt="weather-icon"
+                                    className="h-16 w-16"
+                                />
+                                <div className="flex justify-items-start justify-center">
+                                    <span className="text-xl font-extrabold">
+                                        11
+                                    </span>
+                                    <span className="text-sm mt-[5%] font-bold">
+                                        ℃
+                                    </span>
+                                </div>
+                            </Card>
                         </CardContent>
                     </Card>
 
